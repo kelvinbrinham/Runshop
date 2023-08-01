@@ -1,0 +1,33 @@
+White Swan Data - Quant Specialist Role Task 1
+Kelvin Brinham
+
+---
+
+Tasks:
+For the following questions, assume that you can only bet the Early_Market_Price and the only information that you have is your Early_Model_Price.
+
+---
+
+A1:
+2112 selections. This is because the model has predicted that these selections have a positive expected value. The model has predicted that the Early_Market_Price is higher than the Early_Model_Price for this many selections.
+
+---
+
+Q2:
+2.1.1 - Unit Stake Total Stake: 2112 (2112 selections * 1 unit stake)
+2.1.2 - Unit Stake Total PnL RoI: -0.0162 (-1.62%)
+
+2.2.1 - Kelly Stake Total Stake: 100,000 (Total bankroll by construction).
+I choose this because the Kelly stake suggested betting more than my bankroll. In practice, I would bet say 1/4 of my bankroll. But for the purpose of this question as I understand it, I bet my full bankroll using the Kelly stake.
+2.2.2 - Kelly Stake Total PnL RoI: 0.0324 (3.24%)
+
+---
+
+Q3:
+3.1 - Unit Stake EV RoI: 0.651 (65.1%)
+3.2 - Kelly Stake EV RoI: 0.053 (5.3%)
+
+---
+
+Q4:
+In brief, I take the data of the same selections (value > 0) as in Q1. I run the same process as in Q2 of betting on all these selections and calculating the PnL based on the winner. Only this time, I take the winner (0 or 1) to be drawn from the probability 1 / win_fair_price. I repeat this process many times in a Monte Carlo simulation and take the average PnL.
